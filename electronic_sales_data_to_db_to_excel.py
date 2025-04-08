@@ -94,10 +94,10 @@ queries = {
 }
 
 # Connect to DB
-conn = sqlite3.connect("C:/Users/busiz/OneDrive/Desktop/sales_data.db")
+conn = sqlite3.connect("sales_data.db")
 
 # Create Excel writer
-with pd.ExcelWriter("C:/Users/busiz/OneDrive/Desktop/sales_query_results.xlsx", engine="openpyxl") as writer:
+with pd.ExcelWriter("sales_query_results.xlsx", engine="openpyxl") as writer:
     for name, query in queries.items():
         df = pd.read_sql_query(query, conn)
         print(f"\n=== {name.replace('_', ' ')} ===\n")

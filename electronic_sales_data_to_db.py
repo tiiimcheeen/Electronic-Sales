@@ -2,11 +2,11 @@ import sqlite3
 import pandas as pd
 
 # Create a SQLite connection and write cleaned data into a table
-db_path = "C:/Users/busiz/OneDrive/Desktop/sales_data.db"
+db_path = "sales_data.db"
 conn = sqlite3.connect(db_path)
 
 # Save the cleaned dataframe into a SQLite table
-df_cleaned = pd.read_csv("C:/Users/busiz/OneDrive/Desktop/electronic_sales_data_cleaned.csv")
+df_cleaned = pd.read_csv("electronic_sales_data_cleaned.csv")
 df_cleaned.to_sql("fact_sales", conn, if_exists="replace", index=False)
 
 # Define sample dimension tables with CREATE TABLE statements

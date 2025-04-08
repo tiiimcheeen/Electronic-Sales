@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load data
-file_path = "C:/Users/busiz/OneDrive/Desktop/Kaggle Electronic Sales Data.csv"
+file_path = "Kaggle Electronic Sales Data.csv"
 df = pd.read_csv(file_path)
 
 # Convert 'Purchase Date' to datetime and extract year/month
@@ -26,4 +26,4 @@ df['Num Add-ons'] = df['Add-ons Purchased'].fillna('').apply(
 )
 
 # Save cleaned version
-df.to_csv('C:/Users/busiz/OneDrive/Desktop/electronic_sales_data_cleaned.csv', index=False)
+df.to_csv('electronic_sales_data_cleaned.csv', index=False)
