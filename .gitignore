@@ -1,0 +1,26 @@
+# Ignore raw database and Excel outputs (auto-generated)
+sales_data.db
+sales_query_results.xlsx
+
+# Ignore Power BI temp files
+*.pbip
+*.pbipDataModel
+
+# Python cache folders
+__pycache__/
+*.py[cod]
+
+# Jupyter notebook checkpoint files (if any)
+.ipynb_checkpoints/
+
+# System files (Mac, Windows)
+.DS_Store
+Thumbs.db
+
+# VSCode and editor config
+.vscode/
+*.code-workspace
+
+# Temporary or log files
+*.log
+*.tmp
